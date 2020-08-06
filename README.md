@@ -14,6 +14,12 @@ Things to change
 * **:0.0+1280** to **:0.0** if you use one monitor
 * **xxxx_xxxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx** in **"rtmp://live-lax.twitch.tv/app/xxxx_xxxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"** by replacing the Xs with your **[Twitch dashboard](https://dashboard.twitch.tv/) >> Preferences >> Channel** >> Clik on **Copy** button in **Primary Stream key section** and put the copied stuff like this **"rtmp://live-lax.twitch.tv/app/1234_567891234_567891234567891234567891234567"** (just an example)
 
+* in the **-f pulse -filter_complex amerge -ac 2 -i 3** section change the **3** acording to the output of the following command
+```
+pacmd list-sources
+```
+* And look for **Monitor of Built-in Audio Analog Stereo** and replace the **3** in **-f pulse -filter_complex amerge -ac 2 -i 3** with the index number
+
 To use
 ```
 ./streamscript.sh
