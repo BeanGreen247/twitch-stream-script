@@ -24,3 +24,6 @@ To use
 ```
 ./streamscript.sh
 ```
+## Troubleshooting
+
+If you are having framerate drops just remove -f pulse **-filter_complex amerge -ac 2 -i 3** part of the script to fix it
