@@ -3,7 +3,7 @@ A script that uses ffplay, ffmpeg and flv to stream to Twitch
 
 Install the packages
 ```
-sudo apt install vlc libluajit-5.1-2 libluajit-5.1-common libobs0 libxcb-xinput0 vlc-bin vlc-l10n vlc-plugin-notify vlc-plugin-qt vlc-plugin-samba vlc-plugin-skins2 vlc-plugin-video-splitter vlc-plugin-visualization ffmpeg ffplay wget
+sudo apt install vlc libluajit-5.1-2 libluajit-5.1-common libobs0 libxcb-xinput0 vlc-bin vlc-l10n vlc-plugin-notify vlc-plugin-qt vlc-plugin-samba vlc-plugin-skins2 vlc-plugin-video-splitter vlc-plugin-visualization ffmpeg wget
 ```
 Get the script
 ```
