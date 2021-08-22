@@ -10,6 +10,9 @@ Get the script
 wget -O ~/streamscript.sh https://raw.githubusercontent.com/BeanGreen247/twitch-stream-script/master/streamscript-sample.sh
 ```
 Things to change
+
+ffmpeg part
+
 * **1680x1050** to your resolution
 * **:0.0+1280** to **:0.0** if you use one monitor
 * **xxxx_xxxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx** in **"rtmp://live-lax.twitch.tv/app/xxxx_xxxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"** by replacing the Xs with your **[Twitch dashboard](https://dashboard.twitch.tv/) >> Preferences >> Channel** >> Clik on **Copy** button in **Primary Stream key section** and put the copied stuff like this **"rtmp://live-lax.twitch.tv/app/1234_567891234_567891234567891234567891234567"** (just an example)
@@ -25,6 +28,10 @@ pacmd list-sources
 * **-f pulse -i 2** - get desktop audio from pulse
 
 * **-filter_complex "[1:0][2:0]amix=inputs=2:duration=shortest"** - mix both audio streams into one
+
+ffplay part
+
+* **-left 1325 -top 730 -video_size 380x360** - make sure to change these values as you need
 
 Make executable
 ```
